@@ -1,0 +1,31 @@
+C:\Users\User\Desktop\alessio\SCUOLA\SUPERIORI\3°f\C#\Floppy bird\Floppy bird\bin\Debug\Floppy bird.exe.config
+C:\Users\User\Desktop\alessio\SCUOLA\SUPERIORI\3°f\C#\Floppy bird\Floppy bird\bin\Debug\Floppy bird.exe
+C:\Users\User\Desktop\alessio\SCUOLA\SUPERIORI\3°f\C#\Floppy bird\Floppy bird\bin\Debug\Floppy bird.pdb
+C:\Users\User\Desktop\alessio\SCUOLA\SUPERIORI\3°f\C#\Floppy bird\Floppy bird\obj\Debug\Floppy bird.csprojAssemblyReference.cache
+C:\Users\User\Desktop\alessio\SCUOLA\SUPERIORI\3°f\C#\Floppy bird\Floppy bird\obj\Debug\Floppy_bird.Form1.resources
+C:\Users\User\Desktop\alessio\SCUOLA\SUPERIORI\3°f\C#\Floppy bird\Floppy bird\obj\Debug\Floppy_bird.Properties.Resources.resources
+C:\Users\User\Desktop\alessio\SCUOLA\SUPERIORI\3°f\C#\Floppy bird\Floppy bird\obj\Debug\Floppy bird.csproj.GenerateResource.cache
+C:\Users\User\Desktop\alessio\SCUOLA\SUPERIORI\3°f\C#\Floppy bird\Floppy bird\obj\Debug\Floppy bird.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\alessio\SCUOLA\SUPERIORI\3°f\C#\Floppy bird\Floppy bird\obj\Debug\Floppy bird.exe
+C:\Users\User\Desktop\alessio\SCUOLA\SUPERIORI\3°f\C#\Floppy bird\Floppy bird\obj\Debug\Floppy bird.pdb
+C:\Users\Mattia\Desktop\Floppy bird\Floppy bird\bin\Debug\Floppy bird.exe.config
+C:\Users\Mattia\Desktop\Floppy bird\Floppy bird\bin\Debug\Floppy bird.exe
+C:\Users\Mattia\Desktop\Floppy bird\Floppy bird\bin\Debug\Floppy bird.pdb
+C:\Users\Mattia\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy bird.csprojAssemblyReference.cache
+C:\Users\Mattia\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy_bird.Form1.resources
+C:\Users\Mattia\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy_bird.Properties.Resources.resources
+C:\Users\Mattia\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy bird.csproj.GenerateResource.cache
+C:\Users\Mattia\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy bird.csproj.CoreCompileInputs.cache
+C:\Users\Mattia\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy bird.exe
+C:\Users\Mattia\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy bird.pdb
+C:\Users\User\Desktop\Floppy bird\Floppy bird\bin\Debug\Floppy bird.exe.config
+C:\Users\User\Desktop\Floppy bird\Floppy bird\bin\Debug\Floppy bird.exe
+C:\Users\User\Desktop\Floppy bird\Floppy bird\bin\Debug\Floppy bird.pdb
+C:\Users\User\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy bird.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy_bird.Form1.resources
+C:\Users\User\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy_bird.Properties.Resources.resources
+C:\Users\User\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy bird.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy bird.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy bird.exe
+C:\Users\User\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy bird.pdb
+C:\Users\User\Desktop\Floppy bird\Floppy bird\obj\Debug\Floppy_bird.home.resources
