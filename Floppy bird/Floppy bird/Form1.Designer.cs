@@ -118,7 +118,7 @@
             this.flappy_bird.Image = ((System.Drawing.Image)(resources.GetObject("flappy_bird.Image")));
             this.flappy_bird.Location = new System.Drawing.Point(134, 281);
             this.flappy_bird.Name = "flappy_bird";
-            this.flappy_bird.Size = new System.Drawing.Size(93, 69);
+            this.flappy_bird.Size = new System.Drawing.Size(78, 60);
             this.flappy_bird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.flappy_bird.TabIndex = 2;
             this.flappy_bird.TabStop = false;

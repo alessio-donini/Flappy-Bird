@@ -13,9 +13,10 @@ namespace Floppy_bird
     public partial class Form1 : Form
     {
 
-        int velocitaOstacoli = 8;
+        int velocitaOstacoli = 10;
         int gravita = 10;
         int score = 0;
+        int incrementotubi = 0;
        
        
         public Form1()
@@ -60,7 +61,11 @@ namespace Floppy_bird
                     Ostacoloinf.Location = new Point(600, numerogenerato - 144);
 
                 }
+                if(Ostacolosup.Location.X==600)
+                {
+                    incrementotubi = 0;
 
+                }
 
                 if (flappy_bird.Bounds.IntersectsWith(Ostacoloinf.Bounds) ||
                     flappy_bird.Bounds.IntersectsWith(Ostacolosup.Bounds) ||
@@ -71,10 +76,17 @@ namespace Floppy_bird
                     endgame();
                 }
 
-                if (score > 5)
+
+                if (score % 2==0 && score>5 && Ostacolosup.Location.X<134 && incrementotubi==0)
                 {
-                    velocitaOstacoli = 25;
+                    velocitaOstacoli += 2;
+                    incrementotubi++;
+
+
+
+
                 }
+                
 
 
 
