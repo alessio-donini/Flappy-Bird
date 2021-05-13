@@ -59,6 +59,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Floppy_bird.Properties.Resources.podium;
             this.pictureBox2.Location = new System.Drawing.Point(457, 398);
             this.pictureBox2.Name = "pictureBox2";
@@ -69,6 +70,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Floppy_bird.Properties.Resources.play_button;
             this.pictureBox1.Location = new System.Drawing.Point(214, 398);
             this.pictureBox1.Name = "pictureBox1";
@@ -80,6 +82,7 @@
             // 
             // flappy_bird
             // 
+            this.flappy_bird.BackColor = System.Drawing.Color.Transparent;
             this.flappy_bird.Image = ((System.Drawing.Image)(resources.GetObject("flappy_bird.Image")));
             this.flappy_bird.Location = new System.Drawing.Point(134, 281);
             this.flappy_bird.Name = "flappy_bird";
@@ -90,6 +93,7 @@
             // 
             // Ostacolosup
             // 
+            this.Ostacolosup.BackColor = System.Drawing.Color.Transparent;
             this.Ostacolosup.Image = ((System.Drawing.Image)(resources.GetObject("Ostacolosup.Image")));
             this.Ostacolosup.Location = new System.Drawing.Point(590, -125);
             this.Ostacolosup.Name = "Ostacolosup";
@@ -110,6 +114,7 @@
             // 
             // Ostacoloinf
             // 
+            this.Ostacoloinf.BackColor = System.Drawing.Color.Transparent;
             this.Ostacoloinf.Image = ((System.Drawing.Image)(resources.GetObject("Ostacoloinf.Image")));
             this.Ostacoloinf.Location = new System.Drawing.Point(590, 398);
             this.Ostacoloinf.Name = "Ostacoloinf";
@@ -120,6 +125,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Floppy_bird.Properties.Resources.flappy_bird_logo;
             this.pictureBox3.Location = new System.Drawing.Point(236, 53);
             this.pictureBox3.Name = "pictureBox3";
@@ -132,7 +138,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Aqua;
+            this.BackColor = System.Drawing.Color.MintCream;
+            this.BackgroundImage = global::Floppy_bird.Properties.Resources._4622688;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(803, 767);
             this.Controls.Add(this.Ostacolosup);
             this.Controls.Add(this.pictureBox3);
@@ -142,6 +150,7 @@
             this.Controls.Add(this.flappy_bird);
             this.Controls.Add(this.sfondo);
             this.Controls.Add(this.Ostacoloinf);
+            this.MaximizeBox = false;
             this.Name = "home";
             this.Text = "Flappy Bird";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

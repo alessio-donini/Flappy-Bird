@@ -119,5 +119,8 @@
   <ItemGroup>
     <None Include="Sprites\flappy-bird-logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4622688.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

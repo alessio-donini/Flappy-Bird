@@ -79,7 +79,7 @@ namespace Floppy_bird
 
                 if (score % 2==0 && score>5 && Ostacolosup.Location.X<134 && incrementotubi==0)
                 {
-                    velocitaOstacoli += 2;
+                    velocitaOstacoli += 4;
                     incrementotubi++;
 
 
@@ -188,6 +188,9 @@ namespace Floppy_bird
             flappy_bird.Location = new Point(134, 281);
         }
 
-      
+        private void podium_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

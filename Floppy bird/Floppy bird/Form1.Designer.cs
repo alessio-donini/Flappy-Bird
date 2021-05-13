@@ -81,6 +81,7 @@
             // 
             // taptapbox
             // 
+            this.taptapbox.BackColor = System.Drawing.Color.Transparent;
             this.taptapbox.ErrorImage = null;
             this.taptapbox.Image = global::Floppy_bird.Properties.Resources.logo;
             this.taptapbox.Location = new System.Drawing.Point(272, 263);
@@ -92,6 +93,7 @@
             // 
             // podium
             // 
+            this.podium.BackColor = System.Drawing.Color.Transparent;
             this.podium.Image = global::Floppy_bird.Properties.Resources.podium;
             this.podium.Location = new System.Drawing.Point(458, 452);
             this.podium.Name = "podium";
@@ -100,9 +102,11 @@
             this.podium.TabIndex = 11;
             this.podium.TabStop = false;
             this.podium.Visible = false;
+            this.podium.Click += new System.EventHandler(this.podium_Click);
             // 
             // play
             // 
+            this.play.BackColor = System.Drawing.Color.Transparent;
             this.play.Image = global::Floppy_bird.Properties.Resources.play_button;
             this.play.Location = new System.Drawing.Point(225, 452);
             this.play.Name = "play";
@@ -115,6 +119,7 @@
             // 
             // flappy_bird
             // 
+            this.flappy_bird.BackColor = System.Drawing.Color.Transparent;
             this.flappy_bird.Image = ((System.Drawing.Image)(resources.GetObject("flappy_bird.Image")));
             this.flappy_bird.Location = new System.Drawing.Point(134, 281);
             this.flappy_bird.Name = "flappy_bird";
@@ -135,6 +140,7 @@
             // 
             // Ostacoloinf
             // 
+            this.Ostacoloinf.BackColor = System.Drawing.Color.Transparent;
             this.Ostacoloinf.Image = ((System.Drawing.Image)(resources.GetObject("Ostacoloinf.Image")));
             this.Ostacoloinf.Location = new System.Drawing.Point(492, 398);
             this.Ostacoloinf.Name = "Ostacoloinf";
@@ -145,6 +151,7 @@
             // 
             // Ostacolosup
             // 
+            this.Ostacolosup.BackColor = System.Drawing.Color.Transparent;
             this.Ostacolosup.Image = ((System.Drawing.Image)(resources.GetObject("Ostacolosup.Image")));
             this.Ostacolosup.Location = new System.Drawing.Point(492, -131);
             this.Ostacolosup.Name = "Ostacolosup";
@@ -166,7 +173,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Aqua;
+            this.BackColor = System.Drawing.Color.Honeydew;
+            this.BackgroundImage = global::Floppy_bird.Properties.Resources._4622688;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(803, 767);
             this.Controls.Add(this.taptapbox);
             this.Controls.Add(this.game_over);
@@ -179,6 +188,7 @@
             this.Controls.Add(this.Ostacolosup);
             this.Controls.Add(this.soffitto);
             this.KeyPreview = true;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Flappy  Bird ";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
