@@ -41,6 +41,10 @@
             this.Ostacoloinf = new System.Windows.Forms.PictureBox();
             this.Ostacolosup = new System.Windows.Forms.PictureBox();
             this.soffitto = new System.Windows.Forms.PictureBox();
+            this.inseriscinickname = new System.Windows.Forms.Label();
+            this.classifica = new System.Windows.Forms.TextBox();
+            this.conferma = new System.Windows.Forms.Button();
+            this.Controllonickname = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.taptapbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.podium)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.play)).BeginInit();
@@ -169,6 +173,50 @@
             this.soffitto.TabStop = false;
             this.soffitto.Click += new System.EventHandler(this.soffitto_Click);
             // 
+            // inseriscinickname
+            // 
+            this.inseriscinickname.AutoSize = true;
+            this.inseriscinickname.Location = new System.Drawing.Point(353, 263);
+            this.inseriscinickname.Name = "inseriscinickname";
+            this.inseriscinickname.Size = new System.Drawing.Size(99, 13);
+            this.inseriscinickname.TabIndex = 14;
+            this.inseriscinickname.Text = "Inserisci  Nickname";
+            this.inseriscinickname.Visible = false;
+            // 
+            // classifica
+            // 
+            this.classifica.Location = new System.Drawing.Point(356, 279);
+            this.classifica.MaxLength = 8;
+            this.classifica.Multiline = true;
+            this.classifica.Name = "classifica";
+            this.classifica.Size = new System.Drawing.Size(149, 26);
+            this.classifica.TabIndex = 15;
+            this.classifica.Visible = false;
+            // 
+            // conferma
+            // 
+            this.conferma.Location = new System.Drawing.Point(430, 311);
+            this.conferma.Name = "conferma";
+            this.conferma.Size = new System.Drawing.Size(75, 23);
+            this.conferma.TabIndex = 16;
+            this.conferma.Text = "Conferma";
+            this.conferma.UseVisualStyleBackColor = true;
+            this.conferma.Visible = false;
+            this.conferma.Click += new System.EventHandler(this.conferma_Click);
+            // 
+            // Controllonickname
+            // 
+            this.Controllonickname.AutoSize = true;
+            this.Controllonickname.BackColor = System.Drawing.Color.Transparent;
+            this.Controllonickname.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Controllonickname.ForeColor = System.Drawing.Color.Red;
+            this.Controllonickname.Location = new System.Drawing.Point(318, 369);
+            this.Controllonickname.Name = "Controllonickname";
+            this.Controllonickname.Size = new System.Drawing.Size(207, 23);
+            this.Controllonickname.TabIndex = 17;
+            this.Controllonickname.Text = "Devi inserire un Nickname";
+            this.Controllonickname.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,7 +225,10 @@
             this.BackgroundImage = global::Floppy_bird.Properties.Resources._4622688;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(803, 767);
-            this.Controls.Add(this.taptapbox);
+            this.Controls.Add(this.Controllonickname);
+            this.Controls.Add(this.inseriscinickname);
+            this.Controls.Add(this.classifica);
+            this.Controls.Add(this.conferma);
             this.Controls.Add(this.game_over);
             this.Controls.Add(this.podium);
             this.Controls.Add(this.play);
@@ -187,6 +238,7 @@
             this.Controls.Add(this.Ostacoloinf);
             this.Controls.Add(this.Ostacolosup);
             this.Controls.Add(this.soffitto);
+            this.Controls.Add(this.taptapbox);
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -221,6 +273,10 @@
         private System.Windows.Forms.PictureBox podium;
         private System.Windows.Forms.Label game_over;
         private System.Windows.Forms.PictureBox taptapbox;
+        private System.Windows.Forms.Label inseriscinickname;
+        private System.Windows.Forms.TextBox classifica;
+        private System.Windows.Forms.Button conferma;
+        private System.Windows.Forms.Label Controllonickname;
     }
 }
 

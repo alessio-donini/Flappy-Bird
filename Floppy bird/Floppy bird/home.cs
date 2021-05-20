@@ -24,5 +24,10 @@ namespace Floppy_bird
             this.Hide();
             f1.playPressed = true;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
