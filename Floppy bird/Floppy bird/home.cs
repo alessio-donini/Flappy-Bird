@@ -29,5 +29,10 @@ namespace Floppy_bird
         {
             
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

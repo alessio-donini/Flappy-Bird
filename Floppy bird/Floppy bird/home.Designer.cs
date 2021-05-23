@@ -30,14 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home));
             this.Scoretext = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flappy_bird = new System.Windows.Forms.PictureBox();
             this.Ostacolosup = new System.Windows.Forms.PictureBox();
             this.sfondo = new System.Windows.Forms.PictureBox();
             this.Ostacoloinf = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flappy_bird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ostacolosup)).BeginInit();
@@ -57,22 +55,11 @@
             this.Scoretext.TabIndex = 8;
             this.Scoretext.Text = "Score: 0";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Floppy_bird.Properties.Resources.podium;
-            this.pictureBox2.Location = new System.Drawing.Point(457, 398);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(114, 93);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Floppy_bird.Properties.Resources.play_button;
-            this.pictureBox1.Location = new System.Drawing.Point(214, 398);
+            this.pictureBox1.Location = new System.Drawing.Point(346, 386);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(111, 93);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -95,7 +82,7 @@
             // 
             this.Ostacolosup.BackColor = System.Drawing.Color.Transparent;
             this.Ostacolosup.Image = ((System.Drawing.Image)(resources.GetObject("Ostacolosup.Image")));
-            this.Ostacolosup.Location = new System.Drawing.Point(590, -125);
+            this.Ostacolosup.Location = new System.Drawing.Point(590, -137);
             this.Ostacolosup.Name = "Ostacolosup";
             this.Ostacolosup.Size = new System.Drawing.Size(105, 388);
             this.Ostacolosup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -144,7 +131,6 @@
             this.ClientSize = new System.Drawing.Size(803, 767);
             this.Controls.Add(this.Ostacolosup);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Scoretext);
             this.Controls.Add(this.flappy_bird);
@@ -153,7 +139,6 @@
             this.MaximizeBox = false;
             this.Name = "home";
             this.Text = "Flappy Bird";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flappy_bird)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ostacolosup)).EndInit();
@@ -173,7 +158,6 @@
         private System.Windows.Forms.PictureBox flappy_bird;
         private System.Windows.Forms.Label Scoretext;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

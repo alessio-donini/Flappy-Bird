@@ -42,9 +42,9 @@
             this.Ostacolosup = new System.Windows.Forms.PictureBox();
             this.soffitto = new System.Windows.Forms.PictureBox();
             this.inseriscinickname = new System.Windows.Forms.Label();
-            this.classifica = new System.Windows.Forms.TextBox();
+            this.utente = new System.Windows.Forms.TextBox();
             this.conferma = new System.Windows.Forms.Button();
-            this.Controllonickname = new System.Windows.Forms.Label();
+            this.ScoreboardDGW = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.taptapbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.podium)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.play)).BeginInit();
@@ -53,6 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Ostacoloinf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ostacolosup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.soffitto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ScoreboardDGW)).BeginInit();
             this.SuspendLayout();
             // 
             // Scoretext
@@ -99,7 +100,7 @@
             // 
             this.podium.BackColor = System.Drawing.Color.Transparent;
             this.podium.Image = global::Floppy_bird.Properties.Resources.podium;
-            this.podium.Location = new System.Drawing.Point(458, 452);
+            this.podium.Location = new System.Drawing.Point(463, 452);
             this.podium.Name = "podium";
             this.podium.Size = new System.Drawing.Size(114, 93);
             this.podium.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -146,7 +147,7 @@
             // 
             this.Ostacoloinf.BackColor = System.Drawing.Color.Transparent;
             this.Ostacoloinf.Image = ((System.Drawing.Image)(resources.GetObject("Ostacoloinf.Image")));
-            this.Ostacoloinf.Location = new System.Drawing.Point(492, 398);
+            this.Ostacoloinf.Location = new System.Drawing.Point(492, 395);
             this.Ostacoloinf.Name = "Ostacoloinf";
             this.Ostacoloinf.Size = new System.Drawing.Size(105, 500);
             this.Ostacoloinf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -176,26 +177,26 @@
             // inseriscinickname
             // 
             this.inseriscinickname.AutoSize = true;
-            this.inseriscinickname.Location = new System.Drawing.Point(353, 263);
+            this.inseriscinickname.Location = new System.Drawing.Point(353, 281);
             this.inseriscinickname.Name = "inseriscinickname";
             this.inseriscinickname.Size = new System.Drawing.Size(99, 13);
             this.inseriscinickname.TabIndex = 14;
             this.inseriscinickname.Text = "Inserisci  Nickname";
             this.inseriscinickname.Visible = false;
             // 
-            // classifica
+            // utente
             // 
-            this.classifica.Location = new System.Drawing.Point(356, 279);
-            this.classifica.MaxLength = 8;
-            this.classifica.Multiline = true;
-            this.classifica.Name = "classifica";
-            this.classifica.Size = new System.Drawing.Size(149, 26);
-            this.classifica.TabIndex = 15;
-            this.classifica.Visible = false;
+            this.utente.Location = new System.Drawing.Point(356, 297);
+            this.utente.MaxLength = 8;
+            this.utente.Multiline = true;
+            this.utente.Name = "utente";
+            this.utente.Size = new System.Drawing.Size(149, 26);
+            this.utente.TabIndex = 15;
+            this.utente.Visible = false;
             // 
             // conferma
             // 
-            this.conferma.Location = new System.Drawing.Point(430, 311);
+            this.conferma.Location = new System.Drawing.Point(430, 329);
             this.conferma.Name = "conferma";
             this.conferma.Size = new System.Drawing.Size(75, 23);
             this.conferma.TabIndex = 16;
@@ -204,18 +205,17 @@
             this.conferma.Visible = false;
             this.conferma.Click += new System.EventHandler(this.conferma_Click);
             // 
-            // Controllonickname
+            // ScoreboardDGW
             // 
-            this.Controllonickname.AutoSize = true;
-            this.Controllonickname.BackColor = System.Drawing.Color.Transparent;
-            this.Controllonickname.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Controllonickname.ForeColor = System.Drawing.Color.Red;
-            this.Controllonickname.Location = new System.Drawing.Point(318, 369);
-            this.Controllonickname.Name = "Controllonickname";
-            this.Controllonickname.Size = new System.Drawing.Size(207, 23);
-            this.Controllonickname.TabIndex = 17;
-            this.Controllonickname.Text = "Devi inserire un Nickname";
-            this.Controllonickname.Visible = false;
+            this.ScoreboardDGW.AllowUserToOrderColumns = true;
+            this.ScoreboardDGW.BackgroundColor = System.Drawing.Color.White;
+            this.ScoreboardDGW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ScoreboardDGW.GridColor = System.Drawing.Color.White;
+            this.ScoreboardDGW.Location = new System.Drawing.Point(285, 240);
+            this.ScoreboardDGW.Name = "ScoreboardDGW";
+            this.ScoreboardDGW.Size = new System.Drawing.Size(239, 185);
+            this.ScoreboardDGW.TabIndex = 18;
+            this.ScoreboardDGW.Visible = false;
             // 
             // Form1
             // 
@@ -225,9 +225,9 @@
             this.BackgroundImage = global::Floppy_bird.Properties.Resources._4622688;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(803, 767);
-            this.Controls.Add(this.Controllonickname);
+            this.Controls.Add(this.ScoreboardDGW);
             this.Controls.Add(this.inseriscinickname);
-            this.Controls.Add(this.classifica);
+            this.Controls.Add(this.utente);
             this.Controls.Add(this.conferma);
             this.Controls.Add(this.game_over);
             this.Controls.Add(this.podium);
@@ -255,6 +255,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Ostacoloinf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ostacolosup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.soffitto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ScoreboardDGW)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,9 +275,9 @@
         private System.Windows.Forms.Label game_over;
         private System.Windows.Forms.PictureBox taptapbox;
         private System.Windows.Forms.Label inseriscinickname;
-        private System.Windows.Forms.TextBox classifica;
+        private System.Windows.Forms.TextBox utente;
         private System.Windows.Forms.Button conferma;
-        private System.Windows.Forms.Label Controllonickname;
+        private System.Windows.Forms.DataGridView ScoreboardDGW;
     }
 }
 
