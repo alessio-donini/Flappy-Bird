@@ -83,6 +83,7 @@
             this.game_over.TabIndex = 12;
             this.game_over.Text = "Game Over";
             this.game_over.Visible = false;
+            this.game_over.Click += new System.EventHandler(this.game_over_Click);
             // 
             // taptapbox
             // 

@@ -14,13 +14,11 @@ namespace Floppy_bird
     public partial class Form1 : Form
     {
         DataTable table = new DataTable();
-        int velocitaOstacoli = 10;
-        int gravita = 10;
-        int score = 0;
-        int incrementotubi = 0;
-        static string risultatiPartita = @"risultatiPartita.txt";
-        static string percorsoFileRisultatiPartita = AppDomain.CurrentDomain.BaseDirectory + risultatiPartita;
-
+        int velocitaOstacoli = 10;//dichiarazione variabile per la velocità degli ostacoli
+        int gravita = 10;//dichiarazione variabile per far muovere su o giù il flappy
+        int score = 0;//dichiarazione variabile che tiene il conto del punteggio di gioco
+        int incrementotubi = 0;//dichiarazione variabile per l'incremento dei tubi
+        
         public Form1()
         {
             InitializeComponent();
@@ -33,13 +31,13 @@ namespace Floppy_bird
             if (startgame == true && playPressed == true)
             {
                 taptapbox.Visible = false;
-                flappy_bird.Top += gravita;
-                Ostacoloinf.Left -= velocitaOstacoli;
-                Ostacolosup.Left -= velocitaOstacoli;
-                Scoretext.Text = "score: " + score;
+                flappy_bird.Top += gravita;// Serve per far scendere il flappy
+                Ostacoloinf.Left -= velocitaOstacoli; //per spostare gli ostacoli
+                Ostacolosup.Left -= velocitaOstacoli;//per spostare gli ostacoli
+                Scoretext.Text = "score: " + score;// per tener conto del punteggio della partita
                 int numerogenerato = 0;
-                Random randomtuboup = new Random();
-                Random randomtuboinf = new Random();
+                Random randomtuboup = new Random();// generatore random per il tubo superiore 
+                Random randomtuboinf = new Random();// generatore random per il tubo superiore
 
                 if (Ostacolosup.Left < -100)// serve per controllare lo spawn nei tubi
                 {
@@ -56,7 +54,7 @@ namespace Floppy_bird
                     Ostacoloinf.Location = new Point(600, numerogenerato - 144);
                 }
 
-                if (Ostacolosup.Location.X == 600)
+                if (Ostacolosup.Location.X == 600)// serve per far apparire il tubo ad una distanza di 600 uno dall'altro
                 {
                     incrementotubi = 0;
                 }
@@ -79,13 +77,13 @@ namespace Floppy_bird
         }
 
         bool startgame = false;
-        private void gamekaydawn(object sender, KeyEventArgs e)// funzione per il controllo della disciesa del flappy
+        private void gamekaydawn(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Space)
+            if (e.KeyCode == Keys.Space)//se l'utente clicca sulla barraszaziatrice il gioco inizia
             {
                 startgame = true;
             }
-            if (startgame == true && playPressed == true)
+            if (startgame == true && playPressed == true) // se l'utente ha cliccato sulla barra spaziatrice ed ha avviato il gioco correttamente allora il gioco si avvia 
             {
                 if (e.KeyCode == Keys.Space)
                 {
@@ -98,13 +96,14 @@ namespace Floppy_bird
             }
         }
 
-        private void gamekayup(object sender, KeyEventArgs e)// funzione per il controllo della salita del flappy
+        private void gamekayup(object sender, KeyEventArgs e)// funzione per il controllo del movimento del flappy
         {
             if (startgame == true && playPressed == true)
             {
                 if (e.KeyCode == Keys.Space)
                 {
                     gameTimer.Enabled = true;
+
                     if (flappy_bird.Top >= 0)
                     {
                         gravita = 10;
@@ -113,9 +112,9 @@ namespace Floppy_bird
             }
         }
 
-        private void endgame()// funzione vhe regola la fine della partita
+        private void endgame()
         {
-            gameTimer.Stop();
+            gameTimer.Stop();//una volta terminata la pertita il timer si ferma
             gameTimer.Enabled = false;
             podium.Visible = true;
             play.Visible = true;
@@ -129,8 +128,8 @@ namespace Floppy_bird
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            table.Columns.Add("Nome Utente", typeof(string));
-            table.Columns.Add("Punteggio", typeof(int));
+            table.Columns.Add("Nome Utente", typeof(string));// viene creata la colonna del DGW dove apparirà il nickname
+            table.Columns.Add("Punteggio", typeof(int));// viene creata la colonna del DGW dove apparirà il punteggio
             ScoreboardDGW.DataSource = table;
         }
 
@@ -180,7 +179,7 @@ namespace Floppy_bird
             inseriscinickname.Visible = false;
         }
 
-        private void conferma_Click(object sender, EventArgs e)// funzione del conferma nome giocatore e nel caso il campo è vuoto appare una scritta dove dice di inserire un nickname
+        private void conferma_Click(object sender, EventArgs e)
         { 
             conferma.Visible = false;
             utente.Visible = false;
@@ -194,16 +193,18 @@ namespace Floppy_bird
             }
             else
             {
-                string file = "score.txt";
-                string percorso = AppDomain.CurrentDomain.BaseDirectory + file;
-                StreamWriter punteggi = new StreamWriter("score.txt", true);
+                table.Clear();
+               
+                string file = "score.txt";// crea il file in cui vengono salvati i punteggi
+                string percorso = AppDomain.CurrentDomain.BaseDirectory + file;// percorso del file
+                StreamWriter punteggi = new StreamWriter("score.txt", true);// scrivono nel file il nickname e il punteggio
                 punteggi.WriteLine(utente.Text + " - " + score);
                 punteggi.Close();
                 MessageBox.Show("Punteggio salvato!!!\nOra guarda la classifica");
                 StreamReader classifica = new StreamReader(percorso);    
                 string[] linee = File.ReadAllLines(AppDomain.CurrentDomain.BaseDirectory + file);
                 string[] values;
-                for (int i = 0; i < linee.Length; i++)
+                for (int i = 0; i < linee.Length; i++)// trascrive tutte le righe in values
                 {
                     values = linee[i].ToString().Split('-');
                     string[] righe = new string[values.Length];
@@ -225,7 +226,10 @@ namespace Floppy_bird
             utente.Visible = true;
         }
 
-      
+        private void game_over_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
